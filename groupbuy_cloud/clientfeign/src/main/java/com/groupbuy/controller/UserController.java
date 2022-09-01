@@ -20,6 +20,12 @@ public class UserController {
     @Resource
     private UserFeign userFeign;
 
+    @PostMapping(path= "/userAuth")
+    @ApiOperation("用户登录验证")
+    public @ResponseBody Object userAuth(@RequestParam("userName") String userName, @RequestParam("password") String password) {
+        return userFeign.userAuth(userName, password);
+    }
+
     @PostMapping(path="/register")
     @ApiOperation("新用户注册")
     public @ResponseBody Object register(@RequestParam("userName") String userName, @RequestParam("password") String password, @RequestParam("email") String email) {

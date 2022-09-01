@@ -11,6 +11,7 @@
         <module>order</module>
         <module>seckill</module>
         <module>clientfeign</module>
+        <module>zuulserver</module>
     </modules>
 
     <parent>

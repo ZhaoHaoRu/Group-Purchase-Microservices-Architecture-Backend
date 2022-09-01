@@ -11,3 +11,17 @@
 - [x] createGroup(太慢了，911ms)
 - [ ] endGroup(返回200 OK, 但是数据库没有改)
 - [x] recommend
+
+## version2.0：zuul实现网关
+### 运行
+* 依次启动`registercenter`, `user`, `order`, `group`, `seckill` 和`zuulserver`
+* `zuulserver`运行在8080端口，测试用例详见附属文件
+* 切记更换数据库名称和密码以及运行rabbitmq和redit
+  
+### zuul进行过滤的基本原理
+![filter](assert/filter.png)
+目前实现的功能：
+对于login, changeGroup, addOrder, 删除团购并退款在网关进行过滤，使用token进行比对 
+
+### 安全加密：使用https进行前后端交互
+

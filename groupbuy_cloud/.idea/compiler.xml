@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="registercenter" />
         <module name="seckill" />
+        <module name="zuulserver" />
+        <module name="clientfeign" />
         <module name="user" />
         <module name="group" />
         <module name="order" />
-        <module name="clientfeign" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,6 +24,7 @@
       <module name="registercenter" options="-parameters" />
       <module name="seckill" options="-parameters" />
       <module name="user" options="-parameters" />
+      <module name="zuulserver" options="-parameters" />
     </option>
   </component>
 </project>

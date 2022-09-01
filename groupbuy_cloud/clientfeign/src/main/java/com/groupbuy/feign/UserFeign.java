@@ -15,6 +15,7 @@ import java.util.Set;
 
 @FeignClient(value = "user")
 public interface UserFeign {
+
     @PostMapping(path= "/user/userAuth")
     @ApiOperation("用户登录验证")
 //    @ResponseBody Message<User> userAuth(@RequestParam("userName") String userName, @RequestParam("password") String password);
