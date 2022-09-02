@@ -1,5 +1,5 @@
 com\groupbuy\filter\LoginFilter.class
+com\groupbuy\filter\ChangeGroupFilter.class
 com\groupbuy\filter\AddOrderFilter.class
 com\groupbuy\ZuulServerApplication.class
-com\groupbuy\filter\ChangeGroupFilter.class
 com\groupbuy\filter\DeleteOrderByGroupIdFilter.class

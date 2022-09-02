@@ -12,6 +12,7 @@
         <module>seckill</module>
         <module>clientfeign</module>
         <module>zuulserver</module>
+        <module>configserver</module>
     </modules>
 
     <parent>

@@ -3,3 +3,4 @@ D:\internet\microservice_backend\groupbuy_cloud\zuulserver\src\main\java\com\gro
 D:\internet\microservice_backend\groupbuy_cloud\zuulserver\src\main\java\com\groupbuy\filter\DeleteOrderByGroupIdFilter.java
 D:\internet\microservice_backend\groupbuy_cloud\zuulserver\src\main\java\com\groupbuy\filter\LoginFilter.java
 D:\internet\microservice_backend\groupbuy_cloud\zuulserver\src\main\java\com\groupbuy\filter\ChangeGroupFilter.java
+D:\internet\microservice_backend\groupbuy_cloud\zuulserver\src\main\java\com\groupbuy\config\RequestConfig.java

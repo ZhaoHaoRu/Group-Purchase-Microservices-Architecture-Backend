@@ -10,6 +10,7 @@
         <module name="seckill" />
         <module name="zuulserver" />
         <module name="clientfeign" />
+        <module name="configserver" />
         <module name="user" />
         <module name="group" />
         <module name="order" />
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="clientfeign" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="group" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="registercenter" options="-parameters" />

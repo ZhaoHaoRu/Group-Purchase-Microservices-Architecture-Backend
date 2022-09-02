@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: order
+  profiles:
+    active: dev    # name 与 active 用‘-’拼接
+  cloud:
+    config:
+      uri: http://localhost:8762 # 从8762这个服务器中读取到配置,包括端口号配置、foo等信息
+      fail-fast: true
