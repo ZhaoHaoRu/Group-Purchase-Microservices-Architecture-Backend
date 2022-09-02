@@ -17,6 +17,8 @@
 * 依次启动`registercenter`, `user`, `order`, `group`, `seckill` 和`zuulserver`
 * `zuulserver`运行在8080端口，测试用例详见附属文件
 * 切记更换数据库名称和密码以及运行rabbitmq和redit
+* 数据库记得更改名字
+
   
 ### zuul进行过滤的基本原理
 ![filter](assert/filter.png)
@@ -24,4 +26,10 @@
 对于login, changeGroup, addOrder, 删除团购并退款在网关进行过滤，使用token进行比对 
 
 ### 安全加密：使用https进行前后端交互
+* 不成立，zuul不支持
+
+## version 3.0 加入config server
+### 运行
+* 依次启动`registercenter`, `configserver` `user`, `order`, `group`, `seckill` 和`zuulserver`
+* 在修改配置文件时，直接在`configserver/src/main/resources/shared`文件夹下修改module名对应的文件
 
