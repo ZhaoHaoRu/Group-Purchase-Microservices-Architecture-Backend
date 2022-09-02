@@ -33,3 +33,5 @@
 * 依次启动`registercenter`, `configserver` `user`, `order`, `group`, `seckill` 和`zuulserver`
 * 在修改配置文件时，直接在`configserver/src/main/resources/shared`文件夹下修改module名对应的文件
 
+## version 4.0
+？？？
