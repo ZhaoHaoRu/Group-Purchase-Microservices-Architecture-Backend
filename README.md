@@ -3,6 +3,7 @@
 ### Introduction
 本项目是“交我团”团购平台的微服务架构版本后端，采用了`spring cloud`框架，项目的架构可以参考下图, zuul实现路由动态转发和过滤功能，四个微服务负责具体的逻辑处理，register center实现服务的注册和发现，config center实现配置的集中管理。项目具体实现的功能详见`Group-Purchase-mobile-frontend`的`README`。
 ![arch](./assert/arch.png)
+
 * 启动的各个端口
   ![port](assert/port.png)
   此外，zuulserver运行在`8080`端口，configcenter运行在`8762`端口
@@ -30,17 +31,17 @@
 ### 服务器部署
 服务器部署有两个版本：docker-compose版本和K8S（一主一从服务器）版本
 首先在microservice文件夹地址中，从我的阿里云镜像库中下载对应镜像：
-1.registercenter：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/registercenter
-2.clientfeign：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/clientfeign
-3.order：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/order
-4.seckill：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/seckill
-5.user：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/user
-6.zuulserver：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/zuulserver
-7.group：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/group
+*1.registercenter：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/registercenter*<br />
+*2.clientfeign：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/clientfeign*<br />
+*3.order：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/order*<br />
+*4.seckill：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/seckill*<br />
+*5.user：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/user*<br />
+*6.zuulserver：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/zuulserver*<br />
+*7.group：registry.cn-hangzhou.aliyuncs.com/dongyunpeng/group*<br />
 
-第一版本：docker-compose对应的compose.yml文件在/src文件夹下，cp到/microservice中执行。
-第二版本：一主一从两台服务器部署K8S，并分别下载kuboard的GUI版本，进入masker服务器对应8377端口。
-之后在主节点新建default命名空间，之后在命名空间中加载私有库中的镜像
+第一版本：docker-compose对应的compose.yml文件在/src文件夹下，cp到/microservice中执行。<br />
+第二版本：一主一从两台服务器部署K8S，并分别下载kuboard的GUI版本，进入masker服务器对应8377端口。<br />
+之后在主节点新建default命名空间，之后在命名空间中加载私有库中的镜像<br />
 最后运行镜像，构成网关层-微服务层-持久层的架构。
 
 ### About
